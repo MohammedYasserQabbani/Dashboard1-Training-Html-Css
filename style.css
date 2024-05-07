@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #001;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+} 
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    position: relative;
+    height: 100%;
+}
+
+/* Menu Start */
+.menu {
+    background-color: #123;
+    width: 40px;
+    height: 100%;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.menu:hover {
+    width: 260px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile h2 {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.img-box img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+ul li a {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    background-color: #ffffff55;
+}
+
+ul li a:hover {
+    transform: scale(1.1);
+    color: #123;
+    background-color: #ed5d5d55;    
+}
+
+.log-out {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.log-out a {
+    background-color: #a00;
+}
+
+ul li a i {
+    font-size: 20px;
+}
+/* Menu End */
+/* Content Start */
+.content {
+    width: 100%;
+    margin: 5px;
+}
+
+.title-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(22, 100, 177);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 1px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.data-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.data-info .box {
+    background-color: rgb(11, 57, 103);
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.3s ease;
+}
+
+.data-info .box:hover {
+    background-color: rgb(22, 81, 141);
+    transform: scale(0.9);
+}
+
+.data-info .box i {
+    font-size: 30px;
+}
+
+.data-info .box .data {
+   text-align: center;
+   font-weight: 500;
+   font-size: 20px;
+}
+
+.data-info .box .data span {
+    font-size: 20px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 3px;
+    background-color: rgb(22, 81, 141);
+    border-radius: 5px;
+}
+
+th,td {
+    background-color: #123;
+    height: 50px;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-transform: capitalize;
+}
+
+td:hover {
+    background-color:  #ed5d5d55;
+}
+
+th {
+    font-size: 18px;
+    background-color: rgb(40, 67, 93) ;
+    color: rgb(179, 187, 210);
+}
+
+.price,.count {
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.price {
+    background-color: green;
+}
+
+.count {
+    background-color: gold;
+    color: black;
+}
+
+/* Content End */
